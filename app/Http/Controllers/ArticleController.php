@@ -41,6 +41,6 @@ class ArticleController extends Controller
             ],
         ];
 
-        return view('article.index', ['article' => $articles]);
+        return view('articles.index', ['articles' => $articles]);
     }
 }
