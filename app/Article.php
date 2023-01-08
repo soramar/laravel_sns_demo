@@ -10,6 +10,11 @@ use App\User;
 
 class Article extends Model
 {
+    protected $fillable = [
+        'title',
+        'body',
+    ];
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
